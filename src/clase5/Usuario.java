@@ -9,8 +9,7 @@ public class Usuario{
     public Usuario(String nombre, double dineroDisponible){
         this.nombre = nombre;
         this.dineroDisponible = dineroDisponible;
-        this.idUsuario = Usuario.getNumUsuarios();
-        nunUsuarios++;
+        this.idUsuario = Usuario.nunUsuarios++;
     }
 
     public int getIdUsuario(){
@@ -41,11 +40,12 @@ public class Usuario{
         return nunUsuarios;
     }
 
-    public static void setNumUsuarios(int numUsuarios){
-        Usuario.nunUsuarios = numUsuarios;
-    }
-
     public static void imprimirNumUsuarios(){
         System.out.println("El numero de usuarios es " + Usuario.nunUsuarios);
+    }
+
+    public void donarTodoDinero(){
+        PlataformaCrow.recogerDinero(this.dineroDisponible);
+        this.setDineroDisponible(0.0);
     }
 }
