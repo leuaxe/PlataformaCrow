@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Plataforma",
+            "request": "launch",
+            "mainClass": "clase5.Plataforma",
+            "projectName": "MiPrimerProyecto"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
