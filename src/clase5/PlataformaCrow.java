@@ -5,6 +5,10 @@ public class PlataformaCrow{
     private double dineroPropio;
     private static double dineroTotal = 0.0;
 
+    public PlataformaCrow(String nombre){
+        this.nombre = nombre;
+    }
+
     public String getNombre(){
         return this.nombre;
     }
@@ -32,6 +36,10 @@ public class PlataformaCrow{
     public void asignarDinero(double cantidadDinero){
         dineroTotal -= cantidadDinero;
         this.dineroPropio = cantidadDinero;
+    }
+
+    public static void recogerDinero(double dinero){
+        PlataformaCrow.dineroTotal += dinero;
     }
 
     //como es un metodo comun para todas las plataformas se pone en static
