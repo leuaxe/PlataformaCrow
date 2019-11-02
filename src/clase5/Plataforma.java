@@ -7,5 +7,16 @@ public class Plataforma{
         Usuario u3 = new Usuario("Pepe", 500.0);
 
         Usuario.imprimirNumUsuarios();
+        System.out.println("El usuario 2 tiene el id " + u2.getIdUsuario());
+        System.out.println("El usuario 3 tiene el id " + u3.getIdUsuario());
+
+        PlataformaCrow p1 = new PlataformaCrow("Save the Whales");
+        PlataformaCrow p2 = new PlataformaCrow("Save the Sun");
+
+        u1.donarTodoDinero();
+        u2.donarTodoDinero();
+        u3.donarTodoDinero();
+
+        PlataformaCrow.imprimirDineroTotal();
     }
 }
