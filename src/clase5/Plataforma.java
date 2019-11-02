@@ -18,5 +18,12 @@ public class Plataforma{
         u3.donarTodoDinero();
 
         PlataformaCrow.imprimirDineroTotal();
+
+        p1.asignarDinero(500.0);
+        p2.asignarDinero(200.0);
+
+        PlataformaCrow.imprimirDineroTotal();
+
+        //me quede en el minuto 21 de clase 2
     }
 }
