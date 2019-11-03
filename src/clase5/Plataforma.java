@@ -24,6 +24,9 @@ public class Plataforma{
 
         PlataformaCrow.imprimirDineroTotal();
 
+        System.out.println("dinero asignado a Save the Whales es " + p1.getDineroPropio());
+        System.out.println("dinero asignado a Save the Sun es " + p2.getDineroPropio());
+
         //me quede en el minuto 21 de clase 2
     }
 }
