@@ -7,9 +7,9 @@ public class Usuario{
     private static int nunUsuarios;
 
     public Usuario(String nombre, double dineroDisponible){
+        this.idUsuario = Usuario.nunUsuarios++;
         this.nombre = nombre;
         this.dineroDisponible = dineroDisponible;
-        this.idUsuario = Usuario.nunUsuarios++;
     }
 
     public int getIdUsuario(){
