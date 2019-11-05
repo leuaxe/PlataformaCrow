@@ -8,7 +8,7 @@
             "type": "java",
             "name": "CodeLens (Launch) - Plataforma",
             "request": "launch",
-            "mainClass": "clase5.Plataforma",
+            "mainClass": "montoEnBilletes.Cajero",
             "projectName": "MiPrimerProyecto"
         },
         {
